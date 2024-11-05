@@ -7,7 +7,7 @@ NOTE: I have updated some of the offsets, however there are still a couple of of
 
 IN CASE THIS GETS REMOVED HERE ARE THE ARCHIVE AND DOWNLOAD LINKS:
 
-[archive](https://web.archive.org/web/20240000000000*/https://github.com/unremovable13/ballistic)
+[Web Archive](https://web.archive.org/web/20241105172756/https://github.com/unremovable13/ballistic)
 [Download 1 Catbox](https://files.catbox.moe/2f7ddy.zip)
 [Download 2 Hidan.sh](https://hidan.sh/25kt09i52dof)
 
