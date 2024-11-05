@@ -15,17 +15,18 @@ struct lua_State;
 
 namespace Update
 {
-	const uintptr_t Print = REBASE(0x11FBE70); /* "Current identity is %d" */
-	const uintptr_t GetTaskScheduler = REBASE(0x2BC4A10); /* "initialThermalStatus" */
+	// I have only updated around 8 of these offsets, so it is not a guarantee whether all offsets are correct.
+	const uintptr_t Print = REBASE(0x128C410); //UPDATED OFFSET /* "Current identity is %d" */
+	const uintptr_t GetTaskScheduler = REBASE(0x2CC0CD0); //UPDATED OFFSET /* "initialThermalStatus" */
 	const uintptr_t RawTaskScheduler = REBASE(0x5BD5BA9); /* "Flags must be loaded before task scheduler can be used." */
 
-	const uintptr_t LuaVM__Load = REBASE(0xA82390); /* "%s: bytecode version mismatch (expected [%d..%d], got %d)" */
-	const uintptr_t Task__Defer = REBASE(0xDEF730); /* "Maximum re-entrancy depth (%i) exceeded calling task.defer" */
+	const uintptr_t LuaVM__Load = REBASE(0xAC0530); //UPDATED OFFSET /* "%s: bytecode version mismatch (expected [%d..%d], got %d)" */
+	const uintptr_t Task__Defer = REBASE(0xE761B0); //UPDATED OFFSET /* "Maximum re-entrancy depth (%i) exceeded calling task.defer" */
 
-	const uintptr_t GetGlobalStateForInstance = REBASE(0xC97180); /* "Script Start" */
-	const uintptr_t DecryptLuaState = REBASE(0xA7FE00); /* "Script Start" */
+	const uintptr_t GetGlobalStateForInstance = REBASE(0xCEF900); //UPDATED OFFSET/* "Script Start" */
+	const uintptr_t DecryptLuaState = REBASE(0xABD620); //UPDATED OFFSET /* "Script Start" */
 
-	const uintptr_t PushInstance = REBASE(0xC74B40);
+	const uintptr_t PushInstance = REBASE(0xD9BDC0); //UPDATED OFFSET
 	const uintptr_t LuaO_NilObject = REBASE(0x43D8E28); /* "%s: bytecode version mismatch (expected [%d..%d], got %d)" */
 	const uintptr_t Luau_Execute = REBASE(0x2522210); /* "C stack overflow" */
 	const uintptr_t LuaH_DummyNode = REBASE(0x43D8628);
@@ -64,7 +65,7 @@ namespace Update
 
 	namespace DataModel
 	{
-		const uintptr_t PlaceId = 0x168;
+		const uintptr_t PlaceId = 0x170; //UPDATED OFFSET;
 
 		namespace ScriptContext
 		{
